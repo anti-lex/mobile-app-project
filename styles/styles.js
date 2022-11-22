@@ -54,7 +54,9 @@ export const styles = StyleSheet.create({
         borderWidth: 1
     },
     headerText: {
-        textAlign: 'center',
         fontSize: 18,
+        position: 'absolute',
+        left: 0,
+        right: 20,
     }
 });
