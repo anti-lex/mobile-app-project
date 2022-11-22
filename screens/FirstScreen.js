@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, Platform, TextInput, Button } from 'react-native';
+import { View, Text, Platform, TextInput, Button, Image, ScrollView } from 'react-native';
+
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 
 import CustomHeaderButton from '../components/CustomHeaderButton';
@@ -21,18 +22,13 @@ const FirstScreen = (props) => {
 
     return (
         <View style={styles.form}>
-            <Text style={styles.label}>Midterm</Text>
-            <Text style={styles.label}>a_valsamos</Text>
-            <View style={styles.space2} />                
-            <Text style={styles.label2}>CLICK THE BUTTON BELOW</Text>
-            <Text style={styles.label2}>TO GO TO THE EMAIL SCREEN</Text>
-            <View style={styles.space2} />    
-            <Button 
-                style={styles.button}
-                title="Send email"
-                color="#000000"
-                onPress={ () => props.navigation.navigate('ScreenTwo', { screenTitle: titleValue }) } 
-            /> 
+            <ScrollView>
+              <Image style={styles.images} source={require('../images/evoskies.jpg')}/>
+              <Image style={styles.images} source={require('../images/silvertemp.jpg')}/>
+              <Image style={styles.images} source={require('../images/cosmic.jpg')}/>
+              <Image style={styles.images} source={require('../images/lostorigin.jpg')}/>
+              <Image style={styles.images} source={require('../images/chilling.jpg')}/>
+            </ScrollView>
         </View>
     );
 }

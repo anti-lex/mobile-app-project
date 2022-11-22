@@ -58,5 +58,10 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         left: 0,
         right: 20,
+    },
+    images: {
+        width: 340,
+        height: 180,
+        borderRadius: 33,
     }
 });
