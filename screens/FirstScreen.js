@@ -14,7 +14,7 @@ const FirstScreen = (props) => {
             <><HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
               <Item />
             </HeaderButtons>
-            <Text style={styles.headerText}>TCG Library</Text></>
+            <Text style={styles.headerText}>TCG Library2</Text></>
           ),
          });
       }, []);
