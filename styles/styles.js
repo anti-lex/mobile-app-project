@@ -52,5 +52,9 @@ export const styles = StyleSheet.create({
     textInput: {
         borderColor: 'black',
         borderWidth: 1
+    },
+    headerText: {
+        textAlign: 'center',
+        fontSize: 18,
     }
 });

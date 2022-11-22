@@ -11,12 +11,12 @@ const FirstScreen = (props) => {
     React.useLayoutEffect(() => {
         props.navigation.setOptions({
           headerRight: () => (
-            <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
-                <Item 
-                />
+            <><HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+              <Item />
             </HeaderButtons>
+            <Text style={styles.headerText}>TCG Library</Text></>
           ),
-        });
+         });
       }, []);
 
     return (
