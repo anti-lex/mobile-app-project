@@ -15,7 +15,7 @@ const FirstScreen = (props) => {
             <><HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
               <Item />
             </HeaderButtons>
-            <Text style={styles.headerText}>TCG Library2</Text></>
+            <Text style={styles.headerText}>TCG Library</Text></>
           ),
          });
       }, []);
@@ -24,9 +24,13 @@ const FirstScreen = (props) => {
         <View style={styles.form}>
             <ScrollView>
               <Image style={styles.images} source={require('../images/evoskies.jpg')}/>
+              <View style={styles.space} /> 
               <Image style={styles.images} source={require('../images/silvertemp.jpg')}/>
+              <View style={styles.space} /> 
               <Image style={styles.images} source={require('../images/cosmic.jpg')}/>
+              <View style={styles.space} /> 
               <Image style={styles.images} source={require('../images/lostorigin.jpg')}/>
+              <View style={styles.space} /> 
               <Image style={styles.images} source={require('../images/chilling.jpg')}/>
             </ScrollView>
         </View>
