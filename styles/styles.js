@@ -65,8 +65,5 @@ export const styles = StyleSheet.create({
         borderRadius: 33,
     },
     header: {
-        color: '#FFFFFF', 
-        borderColor: 'black',
-        borderWidth: 1
     }
 });

@@ -23,7 +23,10 @@ function AppNavigator() {
                       ),
                     headerTitle: "TCG Library",
                     headerTitleAlign: 'center',
-                    headerTitleStyle: styles.header
+                    headerTitleStyle: styles.header,
+                    headerRight: () => (
+                        <Button title="Menu" />
+                      ),
                 }}
             >
                 <Stack.Screen
