@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform } from 'react-native';
+import { Platform, Button} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -17,7 +17,10 @@ function AppNavigator() {
                     headerTintColor: Platform.OS === 'android' ? 'black' : 'blue',
                     headerStyle: {
                         backgroundColor: Platform.OS === 'android' ? 'white' : ''
-                    }
+                    },
+                    headerLeft: () => (
+                        <Button title="Menu" />
+                      ),
                 }}
             >
                 <Stack.Screen
@@ -31,7 +34,7 @@ function AppNavigator() {
                     name="ScreenTwo"
                     component={SecondScreen}
                     options={{
-                        title: 'Send email',
+                        title: 'Evolving Skies',
                     }}
                 />
             </Stack.Navigator>

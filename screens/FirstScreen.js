@@ -8,7 +8,7 @@ import { styles } from '../styles/styles';
 const FirstScreen = (props) => {
     const [titleValue, setTitleValue] = useState('');
 
-    React.useLayoutEffect(() => {
+/*     React.useLayoutEffect(() => {
         props.navigation.setOptions({
           headerRight: () => (
             <><HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
@@ -17,7 +17,7 @@ const FirstScreen = (props) => {
             <Text style={styles.headerText}>TCG Library</Text></>
           ),
          });
-      }, []);
+      }, []); */
 
     return (
         <View style={styles.form}>
