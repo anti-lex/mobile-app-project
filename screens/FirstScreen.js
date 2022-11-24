@@ -26,7 +26,9 @@ const FirstScreen = (props) => {
                 <Image style={styles.images} source={require('../images/evoskies.jpg')}/>
               </TouchableOpacity>
               <View style={styles.space} /> 
-              <Image style={styles.images} source={require('../images/silvertemp.jpg')}/>
+              <TouchableOpacity onPress={() => props.navigation.navigate('ScreenThree') }>
+                <Image style={styles.images} source={require('../images/silvertemp.jpg')}/>
+              </TouchableOpacity>
               <View style={styles.space} /> 
               <Image style={styles.images} source={require('../images/cosmic.jpg')}/>
               <View style={styles.space} /> 

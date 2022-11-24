@@ -21,9 +21,6 @@ function AppNavigator() {
                     headerStyle: {
                         backgroundColor: Platform.OS === 'android' ? 'white' : ''
                     },
-                    headerLeft: () => (
-                        <Button title="Menu" />
-                      ),
                     headerTitle: "TCG Library",
                     headerTitleAlign: 'center',
                     headerTitleStyle: styles.header,

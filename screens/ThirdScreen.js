@@ -1,5 +1,5 @@
 import React from 'react';
-import {Alert, Button, Text, View, TextInput} from 'react-native';
+import {Alert, Button, Text, View, TextInput, Image} from 'react-native';
 import {useState} from "react";
 import { styles } from '../styles/styles';
 
