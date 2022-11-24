@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import { View, Text, Platform, TextInput, Button, Image, ScrollView, TouchableOpacity } from 'react-native';
 
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
-
+import { Ionicons } from '@expo/vector-icons';
 import CustomHeaderButton from '../components/CustomHeaderButton';
 import { styles } from '../styles/styles';
 const FirstScreen = (props) => {
     const [titleValue, setTitleValue] = useState('');
 
-/*     React.useLayoutEffect(() => {
-        props.navigation.setOptions({
-          headerRight: () => (
-            <><HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
-              <Item />
-            </HeaderButtons>
-            <Text style={styles.headerText}>TCG Library</Text></>
-          ),
-         });
-      }, []); */
+    React.useLayoutEffect(() => {
+      props.navigation.setOptions({
+        headerRight: () => (
+          <TouchableOpacity
+              onPress={() => props.navigation.navigate('ScreenTwo')}>
+              <Ionicons name="search-outline" size={32} color="black" />
+          </TouchableOpacity>
+        ),
+      });
+    }, []); 
 
     return (
         <View style={styles.form}>
