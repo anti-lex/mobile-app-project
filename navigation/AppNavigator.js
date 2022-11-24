@@ -2,7 +2,7 @@ import React from 'react';
 import { Platform, Button} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-
+import { styles } from '../styles/styles';
 import FirstScreen from '../screens/FirstScreen';
 import SecondScreen from '../screens/SecondScreen';
 const Stack = createStackNavigator();
@@ -21,6 +21,9 @@ function AppNavigator() {
                     headerLeft: () => (
                         <Button title="Menu" />
                       ),
+                    headerTitle: "TCG Library",
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: styles.header
                 }}
             >
                 <Stack.Screen

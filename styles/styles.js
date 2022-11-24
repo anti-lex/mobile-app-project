@@ -63,5 +63,10 @@ export const styles = StyleSheet.create({
         width: 340,
         height: 180,
         borderRadius: 33,
+    },
+    header: {
+        color: '#FFFFFF', 
+        borderColor: 'black',
+        borderWidth: 1
     }
 });
