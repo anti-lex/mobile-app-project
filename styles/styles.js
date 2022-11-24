@@ -64,6 +64,9 @@ export const styles = StyleSheet.create({
         height: 180,
         borderRadius: 33,
     },
-    header: {
+    headerImage: {
+        width:200,
+        height: 100,
+        alignItems: 'flex-end'
     }
 });
