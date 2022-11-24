@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, Platform, TextInput, Button, Image, ScrollView } from 'react-native';
+import { View, Text, Platform, TextInput, Button, Image, ScrollView, TouchableOpacity } from 'react-native';
 
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 
 import CustomHeaderButton from '../components/CustomHeaderButton';
 import { styles } from '../styles/styles';
-
 const FirstScreen = (props) => {
     const [titleValue, setTitleValue] = useState('');
 
@@ -23,7 +22,9 @@ const FirstScreen = (props) => {
     return (
         <View style={styles.form}>
             <ScrollView>
-              <Image style={styles.images} source={require('../images/evoskies.jpg')}/>
+              <TouchableOpacity onPress={() => props.navigation.navigate('ScreenTwo') }>
+                <Image style={styles.images} source={require('../images/evoskies.jpg')}/>
+              </TouchableOpacity>
               <View style={styles.space} /> 
               <Image style={styles.images} source={require('../images/silvertemp.jpg')}/>
               <View style={styles.space} /> 
