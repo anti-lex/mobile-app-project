@@ -67,6 +67,10 @@ export const styles = StyleSheet.create({
     headerImage: {
         width:200,
         height: 100,
-        alignItems: 'flex-end'
+        justifyContent: 'flex-end'
+    },
+
+    textHeader: {
+        width: 50
     }
 });
