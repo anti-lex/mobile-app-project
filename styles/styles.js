@@ -71,6 +71,17 @@ export const styles = StyleSheet.create({
     },
 
     textHeader: {
-        width: 50
-    }
+        width: 75,
+        borderColor: 'black',
+        borderWidth: 3,
+        paddingHorizontal: 8,
+        paddingTop: 3,
+        height:80,
+        marginLeft: 15,
+        marginTop: 10
+    },
+    row: {
+        flexDirection: "row",
+        flexWrap: "wrap",
+      },
 });
