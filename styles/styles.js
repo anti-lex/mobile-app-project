@@ -84,4 +84,11 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         flexWrap: "wrap",
       },
+
+    cards: {
+        width:180,
+        height: 250,
+        marginLeft: 12,
+        marginTop: 5,
+    }
 });

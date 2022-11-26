@@ -5,11 +5,18 @@ import { styles } from '../styles/styles';
 
 const ThirdScreen = props => {
     return (
-        <View style={styles.row}>
-            <Image style={styles.headerImage} source={require('../images/Silver-Tempest.logo.354.png')}/>
+        <><View style={styles.row}>
+            <Image style={styles.headerImage} source={require('../images/Silver-Tempest.logo.354.png')} />
             <Text style={styles.textHeader}>Cards in this set: 195  +20 Secret</Text>
             <Text style={styles.textHeader}>Released Nov 11th 2022</Text>
         </View>
+        <View style={styles.row}>
+            <Image style={styles.cards} source={require('../images/venonat.jpg')} />
+            <Image style={styles.cards} source={require('../images/Venomoth.jpg')} />
+            <Image style={styles.cards} source={require('../images/Spinarak.png')} />
+            <Image style={styles.cards} source={require('../images/Ariados.png')} />
+            <Image style={styles.cards} source={require('../images/Sunkern.png')} />
+        </View></>
     );
 }
 
