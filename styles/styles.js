@@ -78,7 +78,9 @@ export const styles = StyleSheet.create({
         paddingTop: 3,
         height:80,
         marginLeft: 15,
-        marginTop: 10
+        marginTop: 10,
+        backgroundColor: 'white'
+        
     },
     row: {
         flexDirection: "row",

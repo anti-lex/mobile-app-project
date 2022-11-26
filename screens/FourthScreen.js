@@ -4,7 +4,7 @@ import {useState} from "react";
 import { styles } from '../styles/styles';
 import { Ionicons } from '@expo/vector-icons';
 
-const SecondScreen = (props) => {
+const FourthScreen = (props) => {
     React.useLayoutEffect(() => {
         props.navigation.setOptions({
           headerRight: () => (
@@ -29,8 +29,8 @@ const SecondScreen = (props) => {
     );
 }
 
-SecondScreen.navigationOptions = {
+FourthScreen.navigationOptions = {
     headerTitle: 'Add Place'
 }
 
-export default SecondScreen;
+export default FourthScreen;

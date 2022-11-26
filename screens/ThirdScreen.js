@@ -12,12 +12,12 @@ const ThirdScreen = props => {
             <Text style={styles.textHeader}>Released Nov 11th 2022</Text>
         </View>
         <View style={styles.row}>
-            <Image style={styles.cards} source={require('../images/venonat.jpg')} />
-            <Image style={styles.cards} source={require('../images/Venomoth.jpg')} />
-            <Image style={styles.cards} source={require('../images/Spinarak.png')} />
-            <Image style={styles.cards} source={require('../images/Ariados.png')} />
-            <Image style={styles.cards} source={require('../images/Sunkern.png')} />
-            <Image style={styles.cards} source={require('../images/Sunflora.png')} />
+            <Image style={styles.cards} source={require('../images/silvertempest/venonat.jpg')} />
+            <Image style={styles.cards} source={require('../images/silvertempest/Venomoth.jpg')} />
+            <Image style={styles.cards} source={require('../images/silvertempest/Spinarak.png')} />
+            <Image style={styles.cards} source={require('../images/silvertempest/Ariados.png')} />
+            <Image style={styles.cards} source={require('../images/silvertempest/Sunkern.png')} />
+            <Image style={styles.cards} source={require('../images/silvertempest/Sunflora.png')} />
         </View></>
         </ScrollView>
     );
