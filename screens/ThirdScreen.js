@@ -17,6 +17,7 @@ const ThirdScreen = props => {
             <Image style={styles.cards} source={require('../images/Spinarak.png')} />
             <Image style={styles.cards} source={require('../images/Ariados.png')} />
             <Image style={styles.cards} source={require('../images/Sunkern.png')} />
+            <Image style={styles.cards} source={require('../images/Sunflora.png')} />
         </View></>
         </ScrollView>
     );
