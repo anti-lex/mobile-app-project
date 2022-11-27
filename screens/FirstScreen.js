@@ -5,6 +5,7 @@ import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import { Ionicons } from '@expo/vector-icons';
 import CustomHeaderButton from '../components/CustomHeaderButton';
 import { styles } from '../styles/styles';
+import { CardStyleInterpolators } from '@react-navigation/stack';
 const FirstScreen = (props) => {
     const [titleValue, setTitleValue] = useState('');
 
@@ -40,6 +41,13 @@ const FirstScreen = (props) => {
               <View style={styles.space} /> 
               <Image style={styles.images} source={require('../images/chilling.jpg')}/>
             </ScrollView>
+            <View style = {styles.row}>
+              <Ionicons name="home-outline" size={32} color="black" />
+              <Ionicons name="list-outline" size={32} color="black" />
+              <Ionicons name="person-circle-outline" size={32} color="black" />
+              <Ionicons name="add-circle-outline" size={32} color="black" />
+              <Ionicons name="settings-outline" size={32} color="black" />
+            </View>
         </View>
     );
 }
