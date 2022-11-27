@@ -30,9 +30,13 @@ const FirstScreen = (props) => {
                 <Image style={styles.images} source={require('../images/silvertemp.jpg')}/>
               </TouchableOpacity>
               <View style={styles.space} /> 
-              <Image style={styles.images} source={require('../images/cosmic.jpg')}/>
-              <View style={styles.space} /> 
-              <Image style={styles.images} source={require('../images/lostorigin.jpg')}/>
+              <TouchableOpacity onPress={() => props.navigation.navigate('ScreenFour') }>
+                <Image style={styles.images} source={require('../images/cosmic.jpg')}/>
+              </TouchableOpacity>
+              <View style={styles.space} />
+              <TouchableOpacity onPress={() => props.navigation.navigate('ScreenFive') }>
+                <Image style={styles.images} source={require('../images/lostorigin.jpg')}/>
+              </TouchableOpacity> 
               <View style={styles.space} /> 
               <Image style={styles.images} source={require('../images/chilling.jpg')}/>
             </ScrollView>

@@ -7,6 +7,8 @@ import FirstScreen from '../screens/FirstScreen';
 import SecondScreen from '../screens/SecondScreen';
 import ThirdScreen from '../screens/ThirdScreen';
 import FourthScreen from '../screens/FourthScreen';
+import FifthScreen from '../screens/FifthScreen';
+
 import { Ionicons } from '@expo/vector-icons';
 
 const Stack = createStackNavigator();
@@ -60,6 +62,13 @@ function AppNavigator() {
                     component={FourthScreen}
                     options={{
                         title: 'Cosmic Eclipse',
+                    }}
+                />
+                <Stack.Screen
+                    name="ScreenFive"
+                    component={FifthScreen}
+                    options={{
+                        title: 'Lost Origin',
                     }}
                 />
             </Stack.Navigator>
