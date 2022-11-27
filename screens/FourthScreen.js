@@ -33,9 +33,9 @@ const FourthScreen = (props) => {
           <Image style={styles.cards} source={require('../images/cosmiceclipse/mimikyu.png')} />
           <Image style={styles.cards} source={require('../images/cosmiceclipse/zekrom.png')} />
           <Image style={styles.cards} source={require('../images/cosmiceclipse/arceus.png')} />
-          <Image style={styles.cards} source={require('../images/silvertempest/Ariados.png')} />
-          <Image style={styles.cards} source={require('../images/silvertempest/Sunkern.png')} />
-          <Image style={styles.cards} source={require('../images/silvertempest/Sunflora.png')} />
+          <Image style={styles.cards} source={require('../images/cosmiceclipse/lunala.png')} />
+          <Image style={styles.cards} source={require('../images/cosmiceclipse/vileplume.png')} />
+          <Image style={styles.cards} source={require('../images/cosmiceclipse/solgaleo.png')} />
       </View></>
       </ScrollView>
     );
