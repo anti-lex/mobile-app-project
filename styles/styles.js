@@ -92,5 +92,18 @@ export const styles = StyleSheet.create({
         height: 250,
         marginLeft: 12,
         marginTop: 5,
-    }
+    },
+
+    textHeader2: {
+        width: 75,
+        borderColor: 'black',
+        borderWidth: 3,
+        paddingHorizontal: 8,
+        paddingTop: 3,
+        height:80,
+        marginLeft: 10,
+        marginTop: 10,
+        backgroundColor: 'white'
+        
+    },
 });

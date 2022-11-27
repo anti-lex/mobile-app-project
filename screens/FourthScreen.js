@@ -1,5 +1,5 @@
 import React from 'react';
-import {Alert, Button, Text, View, TextInput, TouchableOpacity, Image} from 'react-native';
+import {Alert, Button, Text, View, TextInput, TouchableOpacity, Image, ScrollView} from 'react-native';
 import {useState} from "react";
 import { styles } from '../styles/styles';
 import { Ionicons } from '@expo/vector-icons';
@@ -23,9 +23,21 @@ const FourthScreen = (props) => {
       }, []); 
     
     return (
-        <View style={styles.form}>
-            <Text style={styles.label3}>Email</Text>
-        </View>
+      <ScrollView>
+      <><View style={styles.row}>
+          <Image source={require('../images/cosmiclogo.jpg')} />
+          <Text style={styles.textHeader2}>Cards in this set: 236  +35 Secret</Text>
+          <Text style={styles.textHeader2}>Released Nov 1th 2019</Text>
+      </View>
+      <View style={styles.row}>
+          <Image style={styles.cards} source={require('../images/cosmiceclipse/mimikyu.png')} />
+          <Image style={styles.cards} source={require('../images/cosmiceclipse/zekrom.png')} />
+          <Image style={styles.cards} source={require('../images/cosmiceclipse/arceus.png')} />
+          <Image style={styles.cards} source={require('../images/silvertempest/Ariados.png')} />
+          <Image style={styles.cards} source={require('../images/silvertempest/Sunkern.png')} />
+          <Image style={styles.cards} source={require('../images/silvertempest/Sunflora.png')} />
+      </View></>
+      </ScrollView>
     );
 }
 
