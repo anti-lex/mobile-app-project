@@ -8,6 +8,7 @@ import SecondScreen from '../screens/SecondScreen';
 import ThirdScreen from '../screens/ThirdScreen';
 import FourthScreen from '../screens/FourthScreen';
 import FifthScreen from '../screens/FifthScreen';
+import SixthScreen from '../screens/SixthScreen';
 
 import { Ionicons } from '@expo/vector-icons';
 
@@ -69,6 +70,13 @@ function AppNavigator() {
                     component={FifthScreen}
                     options={{
                         title: 'Lost Origin',
+                    }}
+                />
+                <Stack.Screen
+                    name="ScreenSix"
+                    component={SixthScreen}
+                    options={{
+                        title: 'Home Page',
                     }}
                 />
             </Stack.Navigator>

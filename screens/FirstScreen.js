@@ -41,12 +41,14 @@ const FirstScreen = (props) => {
               <View style={styles.space} /> 
               <Image style={styles.images} source={require('../images/chilling.jpg')}/>
             </ScrollView>
-            <View style = {styles.row}>
-              <Ionicons name="home-outline" size={32} color="black" />
-              <Ionicons name="list-outline" size={32} color="black" />
-              <Ionicons name="person-circle-outline" size={32} color="black" />
-              <Ionicons name="add-circle-outline" size={32} color="black" />
-              <Ionicons name="settings-outline" size={32} color="black" />
+            <View style = {styles.row2}>
+              <TouchableOpacity onPress={() => props.navigation.navigate('ScreenSix')}>
+                <Ionicons style= {styles.footer} name="home-outline" size={32} color="black" />
+              </TouchableOpacity>
+              <Ionicons style= {styles.footer} name="list-outline" size={32} color="black" />
+              <Ionicons style= {styles.footer} name="person-circle-outline" size={32} color="black" />
+              <Ionicons style= {styles.footer} name="add-circle-outline" size={32} color="black" />
+              <Ionicons style= {styles.footer} name="settings-outline" size={32} color="black" />
             </View>
         </View>
     );
