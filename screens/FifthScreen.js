@@ -21,7 +21,7 @@ const FifthScreen = (props) => {
           ),
         });
       }, []); 
-        
+      const Tab = createBottomTabNavigator();
         return (
           <ScrollView>
           <><View style={styles.row}>
@@ -37,6 +37,7 @@ const FifthScreen = (props) => {
               <Image style={styles.cards} source={require('../images/lostorigin/orbeetle.png')} />
               <Image style={styles.cards} source={require('../images/lostorigin/magnezone.png')} />
           </View></>
+
           </ScrollView>
     );
 }
