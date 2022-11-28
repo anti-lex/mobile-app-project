@@ -106,4 +106,14 @@ export const styles = StyleSheet.create({
         backgroundColor: 'white'
         
     },
+
+    row2: {
+        flexDirection: "row",
+        flexWrap: "wrap",
+        height: 60
+    },
+
+    footer: {
+        marginRight: 32
+    }
 });
