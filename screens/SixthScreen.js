@@ -24,19 +24,15 @@ const FourthScreen = (props) => {
     
     return (
       <ScrollView>
-      <><View style={styles.row}>
-          <Image source={require('../images/cosmiclogo.jpg')} />
-          <Text style={styles.textHeader2}>Cards in this set: 236  +35 Secret</Text>
-          <Text style={styles.textHeader2}>Released Nov 1th 2019</Text>
+      <View style={styles.row3}>
+          <Text>POKÉMON TCG: SWORD & SHIELD—SILVER TEMPEST</Text>
+          <Text>Grant a VSTAR Power to any Pokémon V with these special Pokémon Tool cards! Attach Forest Seal Stone to</Text>
+          <Text>your Pokémon V to gain the Star Alchemy Ability. Use this VSTAR Power to search your deck for a card and put it</Text>
+          <Text>in your hand, perfect for finding that one card you need at any point in the game. You can also go on the</Text>
+          <Text>offensive by attaching Earthen Seal Stone to any of your Pokémon V to gain the Star Gravity attack, which puts</Text>
+          <Text>damage counters on each of your opponent's Pokémon V until its remaining HP is 100. Rock the boat with these</Text>
+          <Text>powerful Pokémon Tool cards that make any Pokémon stellar</Text>
       </View>
-      <View style={styles.row}>
-          <Image style={styles.cards} source={require('../images/cosmiceclipse/mimikyu.png')} />
-          <Image style={styles.cards} source={require('../images/cosmiceclipse/zekrom.png')} />
-          <Image style={styles.cards} source={require('../images/cosmiceclipse/arceus.png')} />
-          <Image style={styles.cards} source={require('../images/cosmiceclipse/lunala.png')} />
-          <Image style={styles.cards} source={require('../images/cosmiceclipse/vileplume.png')} />
-          <Image style={styles.cards} source={require('../images/cosmiceclipse/solgaleo.png')} />
-      </View></>
       </ScrollView>
     );
 }

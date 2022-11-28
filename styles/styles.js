@@ -115,5 +115,10 @@ export const styles = StyleSheet.create({
 
     footer: {
         marginRight: 32
-    }
+    },
+
+    row3: {
+        width: '80%',
+        alignItems:'center'
+    },
 });
