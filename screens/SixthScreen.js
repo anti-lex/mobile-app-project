@@ -25,7 +25,8 @@ const FourthScreen = (props) => {
     return (
       <ScrollView>
       <View style={styles.row3}>
-          <Text>POKÉMON TCG: SWORD & SHIELD—SILVER TEMPEST</Text>
+          <Text style={styles.title}>POKÉMON TCG: SWORD & SHIELD—SILVER TEMPEST</Text>
+          <View style={styles.space} />
           <Text>Grant a VSTAR Power to any Pokémon V with these special Pokémon Tool cards! Attach Forest Seal Stone to</Text>
           <Text>your Pokémon V to gain the Star Alchemy Ability. Use this VSTAR Power to search your deck for a card and put it</Text>
           <Text>in your hand, perfect for finding that one card you need at any point in the game. You can also go on the</Text>

@@ -110,16 +110,21 @@ export const styles = StyleSheet.create({
     row2: {
         flexDirection: "row",
         flexWrap: "wrap",
-        height: 60
+        paddingBottom: 10,
     },
 
-    footer: {
-        marginRight: 34 
-
+    footer2: {
+        marginLeft: 43
     },
 
     row3: {
-        width: '100%',
-        alignItems:'center',
+        width: '90%',
+        flexDirection: "row",
+        flexWrap: "wrap",
+        marginLeft: 18,
     },
+
+    title: {
+        
+    }
 });
