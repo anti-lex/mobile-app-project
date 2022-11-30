@@ -127,5 +127,22 @@ export const styles = StyleSheet.create({
     title: {
         fontWeight: 'bold',
         fontSize: 34
+    },
+
+    space3: {
+        width: 40, // or whatever size you need
+        height: 40,
+    }, 
+    cards2: {
+        width:160,
+        height: 220,
+        marginLeft: 12,
+        marginTop: 5,
+        marginBottom: 10
+    },
+    cardWrapper: {
+        flexDirection: "row",
+        flexWrap: "wrap",
+        
     }
 });
