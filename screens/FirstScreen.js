@@ -45,8 +45,12 @@ const FirstScreen = (props) => {
               <TouchableOpacity onPress={() => props.navigation.navigate('ScreenSix')}>
                 <Ionicons style= {styles.footer} name="home-outline" size={32} color="black" />
               </TouchableOpacity>
-              <Ionicons style= {styles.footer2} name="list-outline" size={32} color="black" />
-              <Ionicons style= {styles.footer2} name="person-circle-outline" size={32} color="black" />
+              <TouchableOpacity onPress={() => props.navigation.navigate('ScreenOne')}>
+                <Ionicons style= {styles.footer2} name="list-outline" size={32} color="black" />
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => props.navigation.navigate('ScreenSeven')}>
+                <Ionicons style= {styles.footer2} name="person-circle-outline" size={32} color="black" />
+              </TouchableOpacity>
               <Ionicons style= {styles.footer2} name="add-circle-outline" size={32} color="black" />
               <Ionicons style= {styles.footer2} name="settings-outline" size={32} color="black" />
             </View>
