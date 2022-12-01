@@ -24,7 +24,7 @@ const SeventhScreen = (props) => {
     
     return (
         <View style={styles.form}>
-            <Text style={styles.label3}>Email</Text>
+            <Text style={styles.label3}>User Information</Text>
         </View>
     );
 }
