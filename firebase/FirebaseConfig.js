@@ -1,5 +1,6 @@
-import * as firebase from 'firebase';
-import '@firebase/firestore';
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getDatabase } from 'firebase/database';
 
 var firebaseConfig = {
     apiKey: "AIzaSyC6JxSj13H5fgTS3lO3KK5iPZcyYc2TBxo",
@@ -11,13 +12,8 @@ var firebaseConfig = {
     measurementId: "G-5564C55ZW2"
   };
 
-var app;
-if (!firebase.apps.length) {
-  app = firebase.initializeApp(firebaseConfig);
-}else {
-  app = firebase.app(); // if already initialized, use that one
-}
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-export const db = app.database();
-export const firestore = firebase.firestore(app);
-export const auth = app.auth();
+export const authentication = getAuth(app);
+export const database = getDatabase(app);
