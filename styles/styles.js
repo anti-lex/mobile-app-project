@@ -58,6 +58,7 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         left: 0,
         right: 20,
+   
     },
     images: {
         width: 340,
@@ -170,6 +171,16 @@ export const styles = StyleSheet.create({
     title2: {
         fontWeight: 'bold',
         fontSize: 34,
-        color: 'white'
+        color: 'white',
+        fontFamily: 'monospace',
     },
+
+    words: { 
+      fontFamily: 'monospace',
+      fontWeight: 'bold',
+    },
+    header: { 
+        fontFamily: 'monospace',
+        fontWeight: 'bold'
+    }
 });

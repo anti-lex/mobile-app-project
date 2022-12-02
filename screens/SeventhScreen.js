@@ -4,7 +4,7 @@ import {useState} from "react";
 import { styles } from '../styles/styles';
 import { Ionicons } from '@expo/vector-icons';
 import { app, authentication, database } from '../firebase/FirebaseConfig';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 
 const SeventhScreen = (props) => {
   [registrationEmail, setRegistrationEmail] = useState('');
@@ -57,7 +57,7 @@ const SeventhScreen = (props) => {
         return;
       }
   
-      signInWithEmailAndPassword(loginEmail, loginPassword)
+      signInWithEmailAndPassword(authentication, loginEmail, loginPassword)
         .then(function (_firebaseUser) {
           Alert.alert('user logged in!');
           setLoggedIn(true);
@@ -210,7 +210,7 @@ const SeventhScreen = (props) => {
                   autoCompleteType="password"
                   keyboardType="visible-password"
                   placeholder=" Password" />
-                <Button color = "black" style={styles.button2} title="Register" onPress={registerWithFirebase} />
+                <Button color="black" style={styles.button2} title="Register" onPress={registerWithFirebase} />
               </View>
               <View>
                 <Text style={styles.label3}>Sign In with TCG Library</Text>
@@ -230,8 +230,27 @@ const SeventhScreen = (props) => {
                   autoCompleteType="password"
                   keyboardType="visible-password"
                   placeholder=" Password" />
-                <Button color = "black" style={styles.button2} title="Login" onPress={loginWithFirebase} />
+                <Button color="black" style={styles.button2} title="Login" onPress={loginWithFirebase} />
               </View>
+            </View>}
+          {loggedIn &&
+            <View>
+              <Text style = {styles.words }>Hello! Thank you for signing into TCG Library!</Text>
+              <Text style = { styles.words }>We are currently running a survey on people's favourite Pokémon</Text>
+              <Text style = { styles.words }>Please submit your answer down below!</Text>
+              <View style = {styles.space}/>
+              <TextInput
+                style={styles.textInput}
+                multiline={false}
+                numberOfLines={1}
+                onChangeText={(value) => setDatabaseData(value)}
+                value={databaseData} 
+                placeholder = " Mimikyu"
+                />
+              <View style={styles.buttonContainer}>
+                <Button color = "black" style={styles.button} title="Save Data" onPress={saveDataWithFirebase} />
+              </View>
+              <Button color = "black" style={styles.signOutButton} title="Sign Out" onPress={signoutWithFirebase} />
             </View>}
         </View></>
     );

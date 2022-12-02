@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {Alert, View, TextInput, Text, Button, StyleSheet } from 'react-native';
+import { LogBox } from 'react-native';
 
+LogBox.ignoreAllLogs();
 // run: expo install expo-sms
 // run: expo install expo-mail-composer
 import AppNavigator from './navigation/AppNavigator';

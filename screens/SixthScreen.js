@@ -37,12 +37,12 @@ const FourthScreen = (props) => {
             <Image style={styles.cards2} source={require('../images/earthenSeal.jpg')} />
             <Image style={styles.cards2} source={require('../images/forestSeal.jpg')} />
           </View>
-          <Text>Grant a VSTAR Power to any Pokémon V with these special Pokémon Tool cards! Attach Forest Seal Stone to</Text>
-          <Text>your Pokémon V to gain the Star Alchemy Ability. Use this VSTAR Power to search your deck for a card and put it</Text>
-          <Text>in your hand, perfect for finding that one card you need at any point in the game. You can also go on the</Text>
-          <Text>offensive by attaching Earthen Seal Stone to any of your Pokémon V to gain the Star Gravity attack, which puts</Text>
-          <Text>damage counters on each of your opponent's Pokémon V until its remaining HP is 100. Rock the boat with these</Text>
-          <Text>powerful Pokémon Tool cards that make any Pokémon stellar</Text>
+          <Text style = { styles.words }>Grant a VSTAR Power to any Pokémon V with these special Pokémon Tool cards! Attach Forest Seal Stone to</Text>
+          <Text style = { styles.words }>your Pokémon V to gain the Star Alchemy Ability. Use this VSTAR Power to search your deck for a card and put it</Text>
+          <Text style = { styles.words }>in your hand, perfect for finding that one card you need at any point in the game. You can also go on the</Text>
+          <Text style = { styles.words }>offensive by attaching Earthen Seal Stone to any of your Pokémon V to gain the Star Gravity attack, which puts</Text>
+          <Text style = { styles.words }>damage counters on each of your opponent's Pokémon V until its remaining HP is 100. Rock the boat with these</Text>
+          <Text style = { styles.words }>powerful Pokémon Tool cards that make any Pokémon stellar</Text>
       </View>
       </ScrollView>
     );
