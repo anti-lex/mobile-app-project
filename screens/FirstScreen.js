@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Platform, TextInput, Button, Image, ScrollView, TouchableOpacity } from 'react-native';
-
-import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import { Ionicons } from '@expo/vector-icons';
-import CustomHeaderButton from '../components/CustomHeaderButton';
 import { styles } from '../styles/styles';
-import { CardStyleInterpolators } from '@react-navigation/stack';
 const FirstScreen = (props) => {
     const [titleValue, setTitleValue] = useState('');
     return (

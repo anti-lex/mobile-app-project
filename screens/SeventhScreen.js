@@ -5,6 +5,7 @@ import { styles } from '../styles/styles';
 import { Ionicons } from '@expo/vector-icons';
 import { app, authentication, database } from '../firebase/FirebaseConfig';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import {Database, getDatabase, ref, set} from 'firebase/database';
 
 const SeventhScreen = (props) => {
   [registrationEmail, setRegistrationEmail] = useState('');
@@ -98,28 +99,12 @@ const SeventhScreen = (props) => {
   
       var userId = authentication.currentUser.uid;
   
-  
+      const db = getDatabase();
       // SAVE DATA TO REALTIME DB
-      db.ref('users/' + userId).set({
+      set(ref(db, 'users/' + userId),{
         text: databaseData
       });
-  
-      // SAVE DATA TO FIRESTORE
-      firestore.collection('users').doc(userId).set(
-        {
-          text: databaseData,
-        },
-        {
-          merge: true // set with merge set to true to make sure we don't blow away existing data we didnt intend to
-        }
-      )
-        .then(function () {
-          Alert.alert('Document successfully written!');
-        })
-        .catch(function (error) {
-          Alert.alert('Error writing document');
-          console.log('Error writing document: ', error);
-        });
+      Alert.alert('Document successfully written!');
     }
 
     function retrieveDataFromFirebase() {
