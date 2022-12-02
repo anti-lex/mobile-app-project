@@ -144,5 +144,19 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         flexWrap: "wrap",
         
-    }
+    },
+
+    textInput2: {
+        borderColor: 'gray',
+        borderWidth: 1,
+        marginBottom: 7
+    },
+
+    button2: {
+        marginBottom: '20%',
+        width: '30%',
+        paddingBottom: 40,
+        borderRadius: 5
+    }, 
+
 });

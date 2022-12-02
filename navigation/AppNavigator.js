@@ -1,6 +1,6 @@
 import React from 'react';
 import { Platform, Button, TouchableOpacity, Text} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DarkTheme, DefaultTheme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { styles } from '../styles/styles';
 import FirstScreen from '../screens/FirstScreen';
@@ -10,7 +10,6 @@ import FourthScreen from '../screens/FourthScreen';
 import FifthScreen from '../screens/FifthScreen';
 import SixthScreen from '../screens/SixthScreen';
 import SeventhScreen from '../screens/SeventhScreen';
-
 import { Ionicons } from '@expo/vector-icons';
 
 const Stack = createStackNavigator();
