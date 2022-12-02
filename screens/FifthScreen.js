@@ -7,12 +7,6 @@ import { Ionicons } from '@expo/vector-icons';
 const FifthScreen = (props) => {
     React.useLayoutEffect(() => {
         props.navigation.setOptions({
-          headerRight: () => (
-            <TouchableOpacity
-                onPress={() => props.navigation.navigate('ScreenTwo')}>
-                <Ionicons name="search-outline" size={32} color="black" />
-            </TouchableOpacity>
-          ),
           headerLeft: () => (
             <TouchableOpacity
                 onPress={() => props.navigation.navigate('ScreenOne')}>
@@ -21,7 +15,6 @@ const FifthScreen = (props) => {
           ),
         });
       }, []); 
-      const Tab = createBottomTabNavigator();
         return (
           <ScrollView>
           <><View style={styles.row}>

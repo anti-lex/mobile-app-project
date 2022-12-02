@@ -3,6 +3,7 @@ import {Alert, Button, Text, View, TextInput, TouchableOpacity, Image, ScrollVie
 import {useState} from "react";
 import { styles } from '../styles/styles';
 import { Ionicons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 
 const FourthScreen = (props) => {
     React.useLayoutEffect(() => {
@@ -24,9 +25,13 @@ const FourthScreen = (props) => {
     
     return (
       <ScrollView>
+      <LinearGradient
+        colors={['#4b3a5e', '#8cc4cf', '#d6e6e6', 'transparent']}
+        style={styles.background}   
+        />
       <View style={styles.row3}>
           <View style={styles.space3} />
-          <Text style={styles.title}>POKÉMON TCG: SWORD & SHIELD SILVER TEMPEST</Text>
+          <Text style={styles.title2}>POKÉMON TCG: SWORD & SHIELD SILVER TEMPEST</Text>
           <View style={styles.space3} />
           <View style={styles.cardWrapper}>
             <Image style={styles.cards2} source={require('../images/earthenSeal.jpg')} />

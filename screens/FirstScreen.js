@@ -8,18 +8,6 @@ import { styles } from '../styles/styles';
 import { CardStyleInterpolators } from '@react-navigation/stack';
 const FirstScreen = (props) => {
     const [titleValue, setTitleValue] = useState('');
-
-    React.useLayoutEffect(() => {
-      props.navigation.setOptions({
-        headerRight: () => (
-          <TouchableOpacity
-              onPress={() => props.navigation.navigate('ScreenTwo')}>
-              <Ionicons name="search-outline" size={32} color="black" />
-          </TouchableOpacity>
-        ),
-      });
-    }, []); 
-
     return (
         <View style={styles.form}>
             <ScrollView>

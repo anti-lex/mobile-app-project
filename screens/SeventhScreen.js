@@ -188,7 +188,7 @@ const SeventhScreen = (props) => {
     
     return (
         <><View style={styles.form}>
-        <Text style={styles.label3}>User Information</Text>
+        <Text style={styles.label3}>User Login</Text>
       </View><View style={styles.form}>
           {!loggedIn &&
             <View>
@@ -232,20 +232,6 @@ const SeventhScreen = (props) => {
                   placeholder=" Password" />
                 <Button color = "black" style={styles.button2} title="Login" onPress={loginWithFirebase} />
               </View>
-            </View>}
-          {loggedIn &&
-            <View>
-              <TextInput
-                style={styles.textInput}
-                multiline={true}
-                numberOfLines={4}
-                onChangeText={(value) => setDatabaseData(value)}
-                value={databaseData} />
-              <View style={styles.buttonContainer}>
-                <Button style={styles.button} title="Save Data" onPress={saveDataWithFirebase} />
-                <Button style={styles.button} title="Load Data" onPress={retrieveDataFromFirebase} />
-              </View>
-              <Button color= "black" style={styles.signOutButton} title="Sign Out" onPress={signoutWithFirebase} />
             </View>}
         </View></>
     );

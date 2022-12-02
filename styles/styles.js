@@ -158,5 +158,18 @@ export const styles = StyleSheet.create({
         paddingBottom: 40,
         borderRadius: 5
     }, 
+    background: {
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        height: 300,
+        width: '100%'
+      },
 
+    title2: {
+        fontWeight: 'bold',
+        fontSize: 34,
+        color: 'white'
+    },
 });
