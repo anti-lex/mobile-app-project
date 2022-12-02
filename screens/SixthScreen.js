@@ -8,12 +8,6 @@ import { LinearGradient } from 'expo-linear-gradient';
 const FourthScreen = (props) => {
     React.useLayoutEffect(() => {
         props.navigation.setOptions({
-          headerRight: () => (
-            <TouchableOpacity
-                onPress={() => props.navigation.navigate('ScreenTwo')}>
-                <Ionicons name="search-outline" size={32} color="black" />
-            </TouchableOpacity>
-          ),
           headerLeft: () => (
             <TouchableOpacity
                 onPress={() => props.navigation.navigate('ScreenOne')}>

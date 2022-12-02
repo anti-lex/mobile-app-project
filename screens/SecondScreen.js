@@ -7,12 +7,6 @@ import { Ionicons } from '@expo/vector-icons';
 const SecondScreen = (props) => {
     React.useLayoutEffect(() => {
         props.navigation.setOptions({
-          headerRight: () => (
-            <TouchableOpacity
-                onPress={() => props.navigation.navigate('ScreenTwo')}>
-                <Ionicons name="search-outline" size={32} color="black" />
-            </TouchableOpacity>
-          ),
           headerLeft: () => (
             <TouchableOpacity
                 onPress={() => props.navigation.navigate('ScreenOne')}>
@@ -30,12 +24,12 @@ const SecondScreen = (props) => {
           <Text style={styles.textHeader}>Released Aug 27th 2021</Text>
       </View>
       <View style={styles.row}>
-          <Image style={styles.cards} source={require('../images/silvertempest/venonat.jpg')} />
-          <Image style={styles.cards} source={require('../images/silvertempest/Venomoth.jpg')} />
-          <Image style={styles.cards} source={require('../images/silvertempest/Spinarak.png')} />
-          <Image style={styles.cards} source={require('../images/silvertempest/Ariados.png')} />
-          <Image style={styles.cards} source={require('../images/silvertempest/Sunkern.png')} />
-          <Image style={styles.cards} source={require('../images/silvertempest/Sunflora.png')} />
+          <Image style={styles.cards} source={require('../images/evoskies/sylveon.jpg')} />
+          <Image style={styles.cards} source={require('../images/evoskies/leafeon.jpg')} />
+          <Image style={styles.cards} source={require('../images/evoskies/rayquaza.jpg')} />
+          <Image style={styles.cards} source={require('../images/evoskies/volcarona.jpg')} />
+          <Image style={styles.cards} source={require('../images/evoskies/gigalith.jpg')} />
+          <Image style={styles.cards} source={require('../images/evoskies/golurk.jpg')} />
       </View></>
       </ScrollView>
     );

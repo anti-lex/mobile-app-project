@@ -1,18 +1,11 @@
 import React from 'react';
 import {Alert, Button, Text, View, TextInput, TouchableOpacity, Image, ScrollView} from 'react-native';
-import {useState} from "react";
 import { styles } from '../styles/styles';
 import { Ionicons } from '@expo/vector-icons';
 
 const FourthScreen = (props) => {
     React.useLayoutEffect(() => {
         props.navigation.setOptions({
-          headerRight: () => (
-            <TouchableOpacity
-                onPress={() => props.navigation.navigate('ScreenTwo')}>
-                <Ionicons name="search-outline" size={32} color="black" />
-            </TouchableOpacity>
-          ),
           headerLeft: () => (
             <TouchableOpacity
                 onPress={() => props.navigation.navigate('ScreenOne')}>

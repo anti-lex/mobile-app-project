@@ -27,7 +27,9 @@ const FirstScreen = (props) => {
                 <Image style={styles.images} source={require('../images/lostorigin.jpg')}/>
               </TouchableOpacity> 
               <View style={styles.space} /> 
-              <Image style={styles.images} source={require('../images/chilling.jpg')}/>
+              <TouchableOpacity onPress={() => props.navigation.navigate('ScreenEight') }>
+                <Image style={styles.images} source={require('../images/chilling.jpg')}/>
+              </TouchableOpacity>
             </ScrollView>
             <View style = {styles.row2}>
               <TouchableOpacity onPress={() => props.navigation.navigate('ScreenSix')}>
@@ -39,8 +41,6 @@ const FirstScreen = (props) => {
               <TouchableOpacity onPress={() => props.navigation.navigate('ScreenSeven')}>
                 <Ionicons style= {styles.footer2} name="person-circle-outline" size={32} color="black" />
               </TouchableOpacity>
-              <Ionicons style= {styles.footer2} name="add-circle-outline" size={32} color="black" />
-              <Ionicons style= {styles.footer2} name="settings-outline" size={32} color="black" />
             </View>
         </View>
     );

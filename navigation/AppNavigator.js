@@ -10,6 +10,7 @@ import FourthScreen from '../screens/FourthScreen';
 import FifthScreen from '../screens/FifthScreen';
 import SixthScreen from '../screens/SixthScreen';
 import SeventhScreen from '../screens/SeventhScreen';
+import EighthScreen from '../screens/EighthScreen'
 import { Ionicons } from '@expo/vector-icons';
 
 const Stack = createStackNavigator();
@@ -83,7 +84,14 @@ function AppNavigator() {
                     name="ScreenSeven"
                     component={SeventhScreen}
                     options={{
-                        title: 'Home Page',
+                        title: 'Login Page',
+                    }}
+                />
+                <Stack.Screen
+                    name="ScreenEight"
+                    component={EighthScreen}
+                    options={{
+                        title: 'Chilling reign',
                     }}
                 />
             </Stack.Navigator>

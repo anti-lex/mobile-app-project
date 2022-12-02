@@ -115,7 +115,7 @@ export const styles = StyleSheet.create({
     },
 
     footer2: {
-        marginLeft: 43
+        marginLeft: 118
     },
 
     row3: {
